@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expanding cards</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .big-one {
+            position: absolute;
+            margin: 100px 30px;
+            width: 2000px;
+        }
+
+        ul>li {
+            list-style: none;
+        }
+
+        div[class^="pic"] {
+            border-radius: 45px;
+            position: relative;
+            float: left;
+            height: 330px;
+            width: 230px;
+            font-size: 50px;
+            font-weight: 700;
+            color: white;
+            line-height: 355px;
+            text-align: center;
+            transition: width 4s;
+            background-color: pink;
+            margin: 20px;
+            transition: width 4s;
+        }
+
+        div[class^="pic"]:hover {
+            width: 530px;
+        }
+
+        .big-one .pic1 {
+            background-image: url(01.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .big-one .pic2 {
+            background-image: url(02.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .big-one .pic3 {
+            background-image: url(03.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .big-one .pic4 {
+            background-image: url(04.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .big-one .pic5 {
+            background-image: url(05.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-one">
+        <ul>
+            <li>
+                <div class="pic1">
+                    Canada
+                </div>
+            </li>
+            <li>
+                <div class="pic2">
+                    nowhere
+                </div>
+            </li>
+            <li>
+                <div class="pic3">
+                    iceland
+                </div>
+            </li>
+            <li>
+                <div class="pic4">
+                    iceland
+                </div>
+            </li>
+            <li>
+                <div class="pic5">
+                    iceland
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<!-- 以上是将图片与文字同比例固定，没有缩放的效果 -->
+
+<!-- 以下是另外一种，文字左下角，div种填充图片，文字用伪盒子填入。 -->
+
+<!-- <!DOCTYPE html>    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expanding cards</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .big {
+            width: 2200px;
+            height: 300px;
+            margin: 100px auto;
+        }
+
+        ul>li {
+            list-style: none;
+            position: relative;
+            float: left;
+
+        }
+
+        div[class^="pic"] {
+            border-radius: 45px;
+            height: 376px;
+            width: 330px;
+            font-size: 50px;
+            font-weight: 700;
+            color: white;
+            line-height: 355px;
+            text-align: center;
+            transition: width 4s;
+            background-color: pink;
+            margin: 20px;
+            transition: width 4s;
+            overflow: hidden;
+        }
+
+        div[class^="pic"]:hover {
+            width: 550px;
+        }
+
+        .pic1::before {
+            content: 'Canada';
+            position: absolute;
+            top: 165px;
+            /* 调整文字的位置 */
+            left: 40px;
+            /* 调整文字的位置 */
+            font-size: 50px;
+            color: white;
+            font-weight: 700;
+            z-index: 1;
+            /* 保证文字在图片之上 */
+        }
+
+        .pic2::before {
+            content: 'nowhere';
+            position: absolute;
+            top: 165px;
+            /* 调整文字的位置 */
+            left: 40px;
+            /* 调整文字的位置 */
+            font-size: 50px;
+            color: white;
+            font-weight: 700;
+            z-index: 1;
+            /* 保证文字在图片之上 */
+        }
+
+        .pic3::before {
+            content: 'iceland';
+            position: absolute;
+            top: 165px;
+            /* 调整文字的位置 */
+            left: 40px;
+            /* 调整文字的位置 */
+            font-size: 50px;
+            color: white;
+            font-weight: 700;
+            z-index: 1;
+            /* 保证文字在图片之上 */
+        }
+
+        .pic4::before {
+            content: 'iceland';
+            position: absolute;
+            top: 165px;
+            /* 调整文字的位置 */
+            left: 40px;
+            /* 调整文字的位置 */
+            font-size: 50px;
+            color: white;
+            font-weight: 700;
+            z-index: 1;
+            /* 保证文字在图片之上 */
+        }
+
+        .pic5::before {
+            content: 'iceland';
+            position: absolute;
+            top: 165px;
+            /* 调整文字的位置 */
+            left: 40px;
+            /* 调整文字的位置 */
+            font-size: 50px;
+            color: white;
+            font-weight: 700;
+            z-index: 1;
+            /* 保证文字在图片之上 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <ul>
+            <li>
+                <div class="pic1">
+                    <img src="01.jpg" alt="">
+                    Canada
+                </div>
+            </li>
+            <li>
+                <div class="pic2">
+                    <img src="02.jpg" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="pic3">
+                    <img src="03.jpg" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="pic4">
+                    <img src="04.jpg" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="pic5">
+                    <img src="05.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+        <div>
+</body> -->

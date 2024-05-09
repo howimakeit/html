@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-image: url(trees-4291517_1280.jpg);
+            width: 1280px;
+            height: 719px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .1);
+            z-index: 3;
+        }
+
+        .page1 {
+            position: absolute;
+            z-index: 4;
+            width: 340px;
+            height: 400px;
+            background-color: rgba(255, 255, 255, .8);
+            z-index: 9999;
+            margin-left: 470px;
+            margin-top: 160px;
+            border: 3px solid pink;
+            border-color: rgba(255, 255, 255, 1);
+            border-radius: 15px;
+            text-align: center;
+            padding-top: 15px;
+            font-family: Helvetica system-ui, serif;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .main .page1 img {
+            width: 25px;
+            height: 25px;
+            vertical-align: bottom;
+            margin-right: 5px;
+        }
+
+        .input {
+            font-size: 20px;
+            height: 25px;
+        }
+
+        .person {
+            margin: 30px auto;
+            margin-bottom: 40px;
+        }
+
+        .input::placeholder {
+            color: rgba(0, 0, 0, rgba(0, 0, 0, .1));
+            text-align: center;
+        }
+
+        .submit-button {
+            width: 55px;
+            height: 35px;
+            margin: 50px auto;
+            font-size: 20px;
+        }
+
+        .icon {
+            margin-top: 10px;
+            margin-left: 0px;
+            text-align: center;
+        }
+
+        span {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="page1">
+            <h3>请输入个人信息</h3>
+            <form1 action="00" method="post" name="information"></form1>
+            <div class="person">
+                <label for="01"><img src="人物-人.png"><label>
+                        <input type="text" id="01" placeholder="请输入名字" class="input">
+            </div>
+            <div class="password">
+                <label for="02"><img src="密码.png"><label>
+                        <input type="password" id="02" placeholder="请输入密码" class="input">
+            </div>
+            <input type="button" value="确认" class="submit-button"><br>
+            其他登录方式<br>
+            <div class="icon">
+                <span>
+                    <a href="https://wx.qq.com/"><img src="微信 (1).png" /></a>
+                </span>
+                <span>
+                    <a href="https://im.qq.com/pcqq"><img src="QQ.png" /></a>
+                </span>
+            </div>
+
+</body>
+
+</html>

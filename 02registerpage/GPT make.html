@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            background-image: url(trees-4291517_1280.jpg);
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border: 3px solid pink;
+            border-radius: 15px;
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .login-form img {
+            width: 25px;
+            height: 25px;
+            vertical-align: bottom;
+            margin-right: 5px;
+        }
+
+        .login-form input {
+            font-size: 20px;
+            height: 25px;
+            margin: 10px 0;
+            padding: 5px;
+            width: 80%;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            outline: none;
+        }
+
+        .login-form input::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .submit-button {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+
+        .other-login {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .other-login span {
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="overlay"></div>
+        <div class="login-form">
+            <h2>请输入个人信息</h2>
+            <form action="00" method="post" name="information">
+                <div class="person">
+                    <label for="username"><img src="人物-人.png" alt="Person Icon"></label>
+                    <input type="text" id="username" placeholder="请输入名字">
+                </div>
+                <div class="password">
+                    <label for="password"><img src="密码.png" alt="Password Icon"></label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                </div>
+                <button type="submit" class="submit-button">确认</button>
+            </form>
+            <div class="other-login">
+                <p>其他登录方式</p>
+                <span>
+                    <a href="https://wx.qq.com/"><img src="微信 (1).png" alt="WeChat Icon"></a>
+                </span>
+                <span>
+                    <a href="https://im.qq.com/pcqq"><img src="qq.png" alt="QQ Icon"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
