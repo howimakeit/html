@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    background-attachment: fixed;
+    background-image: url(3cd6872eaf0975464a0654c73a77fa6.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2000px;
+    width: 70%;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.XZ {
+    width: 74%;
+    height: 230px;
+    background-color: rgba(255, 255, 255, .6);
+    margin: 0px auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-indent: 2em;
+    vertical-align: bottom;
+}
+
+.XZ img {
+    height: 230px;
+    float: left;
+    margin-right: 15px;
+}
+
+.XL {
+    width: 74%;
+    height: 290px;
+    background-color: rgba(255, 255, 255, .6);
+    margin: 0px auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-indent: 2em;
+    vertical-align: baseline;
+    margin-top: 120px;
+}
+
+.XL img {
+    height: 210px;
+    float: left;
+    margin-right: 15px;
+}
+
+.QK {
+    width: 74%;
+    height: 290px;
+    background-color: rgba(255, 255, 255, .6);
+    margin: 0px auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-indent: 2em;
+    vertical-align: baseline;
+    margin-top: 120px;
+}
+
+.QK img {
+    height: 210px;
+    float: right;
+    margin-left: 15px;
+}
+
+.SG {
+    width: 74%;
+    height: 270px;
+    background-color: rgba(255, 255, 255, .6);
+    margin: 0px auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-indent: 2em;
+    vertical-align: baseline;
+    margin-top: 120px;
+}
+
+.SG img {
+    height: 270px;
+    float: right;
+    margin-left: 15px;
+}
+
+.YX {
+    width: 74%;
+    height: 380px;
+    background-color: rgba(255, 255, 255, .6);
+    margin: 0px auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-indent: 2em;
+    vertical-align: baseline;
+    margin-top: 140px;
+}
+
+.YX img {
+    height: 270px;
+    float: right;
+}
+
+.t-firstpage {
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    height: 70px;
+    width: 140px;
+    font-size: 30px;
+    background-color: black;
+    line-height: 70px;
+    text-align: center;
+}
+
+.t-firstpage a {
+    text-decoration: none;
+    color: white;
+}
+
+.SJX {
+    border: 0px;
+    width: 0px;
+    position: fixed;
+    top: 10%;
+    left: 140px;
+    border-left: 40px solid;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.t-comic {
+    position: fixed;
+    top: 30%;
+    left: 0%;
+    height: 70px;
+    width: 140px;
+    font-size: 30px;
+    background-color: black;
+    line-height: 70px;
+    text-align: center;
+}
+
+.t-comic a {
+    text-decoration: none;
+    color: white;
+}
+
+.SJX02 {
+    border: 0px;
+    width: 0px;
+    position: fixed;
+    top: 30%;
+    left: 140px;
+    border-left: 40px solid;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.t-book {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    height: 70px;
+    width: 140px;
+    font-size: 30px;
+    background-color: black;
+    line-height: 70px;
+    text-align: center;
+}
+
+.t-book a {
+    text-decoration: none;
+    color: white;
+}
+
+.SJX03 {
+    border: 0px;
+    width: 0px;
+    position: fixed;
+    top: 50%;
+    left: 140px;
+    border-left: 40px solid;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    background-color: transparent;
+    z-index: 999;
+}
